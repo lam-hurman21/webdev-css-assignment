@@ -24,20 +24,22 @@
         <h2>Sign Up Form</h2>
         <p>Fill in this form to join our cafe.</p>
 
-        <form>
+        <form id="register-form" data-validate>
+            <p class="form-error" aria-live="polite"></p>
+
             <div class="form-group">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" data-required>
             </div>
 
             <div class="form-group">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" data-required>
             </div>
 
             <div class="form-group">
                 <label for="password">Password:</label>
-                <input type="password" id="password" name="password">
+                <input type="password" id="password" name="password" data-required>
             </div>
 
             <div class="form-group">
@@ -61,5 +63,6 @@
         <p>Copyright 2026 Pixel and Dice Cafe</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

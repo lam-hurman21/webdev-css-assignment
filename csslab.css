@@ -182,6 +182,39 @@ form {
   box-shadow: 0 0 0 3px rgba(47, 107, 79, 0.15);
 }
 
+.form-error {
+  display: none;
+  color: #b42318;
+  background: #fef3f2;
+  border: 1px solid #fecdca;
+  border-radius: 6px;
+  padding: 0.6rem 0.75rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.input-error {
+  border-color: #b42318 !important;
+}
+
+#extra-info {
+  display: none;
+  margin-top: 0.75rem;
+}
+
+#confirm-message {
+  margin-top: 0.75rem;
+  font-weight: 600;
+  color: var(--green-dark);
+}
+
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
 /* Gallery flip cards */
 .gallery {
   display: flex;
