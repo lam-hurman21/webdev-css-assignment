@@ -29,8 +29,6 @@ function setupFormValidation() {
 
   forms.forEach(function (form) {
     form.addEventListener("submit", function (event) {
-      event.preventDefault();
-
       var errorBox = form.querySelector(".form-error");
       var requiredFields = form.querySelectorAll("[data-required]");
       var emptyFields = [];
@@ -45,6 +43,7 @@ function setupFormValidation() {
       });
 
       if (emptyFields.length > 0) {
+        event.preventDefault();
         if (errorBox) {
           errorBox.textContent = "Please fill in all required fields before submitting.";
           errorBox.style.display = "block";
@@ -58,8 +57,7 @@ function setupFormValidation() {
         errorBox.textContent = "";
       }
 
-      alert("Thank you! Your form was submitted successfully.");
-      form.reset();
+      // Valid form: allow normal submit (POST to PHP when action is set)
     });
   });
 }

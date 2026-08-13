@@ -9,53 +9,68 @@
 <body>
 
     <nav class="nav">
-        <a class="nav-brand" href="index.html">Pixel and Dice Cafe</a>
+        <a class="nav-brand" href="index.html">Pixel &amp; Dice Cafe</a>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a class="active" href="games.html">Games</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="register.html">Register</a></li>
+            <li><a href="register.php">Register</a></li>
+            <li><a href="members.php">Members</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
     <main class="container">
-        <h1 id="games-heading">Our Games</h1>
+        <div class="page-intro">
+            <h1 id="games-heading">Our Games</h1>
+            <p>Browse a few of our most requested titles. Members can borrow games during opening hours.</p>
+        </div>
 
         <h2>Popular Games</h2>
-        <table>
-            <tr>
-                <th>Game</th>
-                <th>Players</th>
-                <th>Available</th>
-            </tr>
-            <tr>
-                <td>Catan</td>
-                <td>3-4</td>
-                <td>Yes</td>
-            </tr>
-            <tr>
-                <td>Ticket to Ride</td>
-                <td>2-5</td>
-                <td>Yes</td>
-            </tr>
-            <tr>
-                <td>Codenames</td>
-                <td>4-8</td>
-                <td>No</td>
-            </tr>
-        </table>
+        <div class="table-wrap">
+            <table>
+                <tr>
+                    <th>Game</th>
+                    <th>Players</th>
+                    <th>Available</th>
+                </tr>
+                <tr>
+                    <td>Catan</td>
+                    <td>3-4</td>
+                    <td><span class="badge badge-yes">Yes</span></td>
+                </tr>
+                <tr>
+                    <td>Ticket to Ride</td>
+                    <td>2-5</td>
+                    <td><span class="badge badge-yes">Yes</span></td>
+                </tr>
+                <tr>
+                    <td>Codenames</td>
+                    <td>4-8</td>
+                    <td><span class="badge badge-no">No</span></td>
+                </tr>
+            </table>
+        </div>
 
         <h2>Game Types</h2>
-        <ul>
-            <li>Strategy games</li>
-            <li>Party games</li>
-            <li>Card games</li>
+        <ul class="info-grid">
+            <li class="card mini-card">
+                <strong>Strategy games</strong>
+                <p>Think a few turns ahead.</p>
+            </li>
+            <li class="card mini-card">
+                <strong>Party games</strong>
+                <p>Easy to learn, fun in a group.</p>
+            </li>
+            <li class="card mini-card">
+                <strong>Card games</strong>
+                <p>Quick rounds between coffee.</p>
+            </li>
         </ul>
 
         <div class="btn-row">
             <button type="button" class="btn" id="toggle-info-btn">Show extra info</button>
-            <button type="button" class="btn" id="change-colour-btn">Change heading colour</button>
+            <button type="button" class="btn btn-outline" id="change-colour-btn">Change heading colour</button>
         </div>
 
         <div id="extra-info" class="card">
@@ -63,7 +78,7 @@
         </div>
         <p id="confirm-message"></p>
 
-        <p><a class="btn" href="register.html">Register</a> to borrow games.</p>
+        <p><a class="btn" href="register.php">Register</a> to borrow games.</p>
     </main>
 
     <footer class="footer">

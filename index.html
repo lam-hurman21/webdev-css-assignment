@@ -9,44 +9,58 @@
 <body>
 
     <nav class="nav">
-        <a class="nav-brand" href="index.html">Pixel and Dice Cafe</a>
+        <a class="nav-brand" href="index.html">Pixel &amp; Dice Cafe</a>
         <ul class="nav-links">
             <li><a class="active" href="index.html">Home</a></li>
             <li><a href="games.html">Games</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="register.html">Register</a></li>
+            <li><a href="register.php">Register</a></li>
+            <li><a href="members.php">Members</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
     <main class="container">
-        <h1>Pixel and Dice Board Game Cafe</h1>
-        <p id="welcome-message"></p>
+        <section class="hero">
+            <p class="eyebrow">Board game cafe</p>
+            <h1>Pixel and Dice Board Game Cafe</h1>
+            <p id="welcome-message"></p>
+            <a class="btn" href="register.php">Join the cafe</a>
+        </section>
 
-        <div class="card">
-            <h2>Welcome!</h2>
-            <p>
-                This is a cafe where you can <strong>play board games</strong> and drink coffee.
-                We have over 100 games for you to try.
-            </p>
-            <img src="https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Board games" width="350">
+        <div class="card feature-card">
+            <div class="feature-copy">
+                <h2>Welcome!</h2>
+                <p>
+                    This is a cafe where you can <strong>play board games</strong> and drink coffee.
+                    We have over 100 games for you to try.
+                </p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1610890716171-6b1bb98ffd09?auto=format&amp;fit=crop&amp;w=700&amp;q=80" alt="Board games">
         </div>
 
         <h3>Why come here?</h3>
-        <ul>
-            <li>Lots of games</li>
-            <li>Friendly staff</li>
-            <li>Free Wi-Fi</li>
+        <ul class="info-grid">
+            <li class="card mini-card">
+                <strong>Lots of games</strong>
+                <p>More than 100 titles ready to play.</p>
+            </li>
+            <li class="card mini-card">
+                <strong>Friendly staff</strong>
+                <p>Happy to teach rules and find a table.</p>
+            </li>
+            <li class="card mini-card">
+                <strong>Free Wi-Fi</strong>
+                <p>Stay online between turns.</p>
+            </li>
         </ul>
 
         <h3>What to do next</h3>
-        <ol>
+        <ol class="steps">
             <li><a href="games.html">Look at our games</a></li>
-            <li><a href="register.html">Sign up</a></li>
+            <li><a href="register.php">Sign up</a></li>
             <li><a href="contact.html">Visit us</a></li>
         </ol>
-
-        <p><a class="btn" href="register.html">Join the cafe</a></p>
     </main>
 
     <footer class="footer">
